@@ -27,10 +27,10 @@ public class DemoApplication {
         }
     }
 
-	public record Response(@JsonProperty("random_number") Integer randomNumber) {
+    public record Response(@JsonProperty("random_number") Integer randomNumber) {
 
-		public Response(Integer randomNumber) {
-			this.randomNumber = randomNumber;
-		}
-	}
+        public Response(Integer randomNumber) {
+            this.randomNumber = randomNumber;
+        }
+    }
 }
