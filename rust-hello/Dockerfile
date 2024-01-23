@@ -20,7 +20,7 @@ RUN adduser \
 USER appuser
 
 # Copy the executable from the "build" stage.
-COPY --from=build /target/release /bin
+COPY --from=build /target/release/hello /bin
 
 # What the container should run when it is started.
 ENTRYPOINT [ "/bin/hello" ]
